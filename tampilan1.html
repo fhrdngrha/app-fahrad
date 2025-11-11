@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Naila</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <button class="back-btn" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i> Kembali
+        </button>
+        <h1 class="nav-title">Naila Khaerunnisa</h1>
+        <button class="next-page-btn" onclick="nextPage()">
+            Lanjut <i class="fas fa-arrow-right"></i>
+        </button>
+    </nav>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <!-- Foto 1 -->
+            <div class="photo-item" data-index="0">
+                <div class="photo-frame">
+                    <img src="image/1.jpeg" class="photo" alt="Foto Naila 1" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400'">
+                    <div class="photo-overlay">
+                        <span class="click-hint">First Melihat Naila tidur kecapean</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="photo-item" data-index="1">
+                <div class="photo-frame">
+                    <img src="image/5.jpeg" class="photo" alt="Foto Naila 2" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400'">
+                    <div class="photo-overlay">
+                        <span class="click-hint">Photobox Bareng</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="photo-item" data-index="2">
+                <div class="photo-frame">
+                    <img src="image/2.jpeg" class="photo" alt="Foto Naila 3" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400'">
+                    <div class="photo-overlay">
+                        <span class="click-hint">Klik untuk melihat</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Popup dengan Foto di Kiri dan Puisi di Kanan -->
+    <div id="photoModal" class="modal">
+        <div class="modal-content-photo-poem">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            
+            <div class="modal-body">
+                <!-- Foto di Kiri dengan Animasi -->
+                <div class="modal-photo-container">
+                    <img id="modalImage" src="" alt="Foto Naila" class="modal-photo">
+                    <div class="photo-frame-animation"></div>
+                </div>
+                
+                <!-- Puisi di Kanan -->
+                <div class="modal-poem-container">
+                    <h3 class="poem-title">For you</h3>
+                    <div id="modalPoem" class="poem-text-modal">
+                        <!-- Puisi akan dimuat di sini melalui JavaScript -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
