@@ -9,7 +9,8 @@ const poems = [
 
     `Ini foto pertama kita berdua, dan sumpah… kamu cantik banget.
 Kayak, gak nyangka aja bisa foto bareng kamu
-moment-nya sederhana, tapi moment ini ga akan bisa dilupain `,
+moment-nya sederhana, tapi moment ini ga akan bisa dilupain,
+dannn pada akhirnya aku mencintaimu,rasa ini datang se perkian detik`,
 
     `Bener kata orang, kalau udah nemuin seseorang yang bisa bikin dunia jadi seindah ini, 
     rasanya apa pun bakal aku lakuin buat kamu. Karena ya… kamu itu alasan kenapa semuanya terasa beda`,
